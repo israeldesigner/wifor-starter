@@ -1,0 +1,158 @@
+
+.s-content{
+    padding: 10rem 0;
+}
+
+.s-banner{
+    #slider {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .carousel-item {
+        .bannerPosition{
+            margin-top: -15px;
+        }
+        .s-banner__block{
+            position: absolute;
+            right: 15.9%;
+            bottom: 17.5%;
+            width: 65%;
+            z-index: 20;
+            button{
+                opacity: 0.0;
+            }
+        }
+    }
+
+
+    .carousel-indicators li {
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        border: 2px solid $white;
+        margin-bottom: 10px;
+        background-color:rgba($color: $white, $alpha: 0.0);
+        opacity: 1;
+    }
+    .carousel-indicators {
+        position: absolute;
+        bottom: 35%;
+        right: 12% !important;
+        left: 90%;
+        z-index: 15;
+        display: block;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+        list-style: none;
+    }
+
+    .carousel-indicators .active{
+        background-color: $main !important;
+
+    }
+}
+
+
+@media (max-device-width: 1365px) {
+
+    .s-banner{
+        #slider {
+            height: auto;
+        }
+        .carousel-item {
+            .s-banner__block{
+                top: 20%;
+                right: 10%;
+                z-index: 20;
+            }
+            .s-banner__block--img{
+                width: 225px;
+            }
+
+            .s-banner__img--title{
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+
+    .s-content{
+        padding: 5rem 0;
+    }
+
+    .s-banner{
+        .carousel-indicators {
+            bottom: 13%;
+        }
+
+    }
+    .s-content .s-content__article{
+        font-size: 1.10rem;
+    }
+
+    .s-banner #slider{
+        height: auto;
+    }
+
+    .s-banner .carousel-item .s-banner__img--title{
+        font-size: 1.10rem;
+    }
+
+    .s-eixos{
+        .s-content__cardEixos{
+            .card--eixos{
+                width: 100%;
+            }
+
+        }
+    }
+
+
+    .cardEixos{
+        width: 100% !important;
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    .s-banner{
+        .carousel-indicators {
+            bottom: 19%;
+        }
+        .s-banner__block{
+            .s-banner__img--title{
+                font-size: 1.05rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .s-banner{
+        .carousel-indicators {
+            bottom: 21%;
+        }
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .s-banner{
+        .carousel-indicators {
+            bottom: 23%;
+        }
+    }
+
+}

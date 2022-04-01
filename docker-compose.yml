@@ -1,0 +1,19 @@
+version: "3"
+services:
+
+  nginx:
+    build:
+        context: .
+        dockerfile: .docker/nginx/Dockerfile
+    container_name: "nginx"
+    restart: always
+    tty: true
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

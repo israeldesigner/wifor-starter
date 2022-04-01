@@ -1,0 +1,71 @@
+.btnTop{
+    float:right;
+    margin-right: 80px;
+    margin-top: -10px;
+    font-size: small;
+    background: $yellow;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  #footer{
+      border-top: 12px solid $yellow;
+      padding: 40px 0px;
+      background: $blue;
+      margin-top: 18px;
+
+    .btn156{
+        color: $white;
+    }
+
+    .blockAdress{
+      display: flex;
+      align-items: start;
+      margin-top: 10px;
+    }
+
+    .blockAdress address{
+      margin-left: 15px;
+    }
+
+    .linkPortal{
+      color:$yellow;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .linkPortal:hover{
+      color: $white;
+    }
+
+    .logoBranca{
+      width: 300px;
+    }
+
+  }
+
+
+  @media (max-width: 768px) {
+
+    .btnTop{
+      margin-right: 40px;
+    }
+
+    #footer{
+      .blockAdress{
+        display: block;
+        margin-top: 10px;
+        address{
+          margin-top: 15px;
+          margin-left: 0px;
+        }
+      }
+
+      .logoBranca{
+        width: 200px;
+      }
+    }
+
+  }

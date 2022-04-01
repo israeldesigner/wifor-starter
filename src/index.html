@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>WiFOR</title>
+  <meta name="description" content="" />
+  <meta property="og:title" content="Fortaleza WiFOR" />
+  <meta property="og:description"
+        content="" />
+  <meta property="og:type" content="video.movie" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="style.css" rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <main class="wrapper">
+        <!--header-->
+        <header id="header" class="bg-yellow">
+            <nav class="h-nav navbar navbar-expand-lg bgYellow">
+                <!--desktop menu-->
+                <div class="h-nav__links--order">
+                    <!--Logo wifor-->
+                    <a href="/" class="h-nav__mainBrand">
+                        <img src="img/logoPref.png" alt="Logo prefeitura de fortaleza" class="h-nav__brand--hidden">
+                    </a>
+                    <!--/Logo wifor-->
+
+                    <!--nav menu desktop-->
+                    <ul class="h-nav__menu--list navbar-nav mx-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" href="/">Início</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link linkAnchorCom" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linkAnchorFor" href="#">Pontos de wi fi</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link linkCursos" href="/cursos">Como se conectar</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/duvidas-frequentes">Dúvidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/parceiros">Parceiros</a>
+                        </li>
+                        <li class="nav-item navItem-login">
+                            <button type="button" onclick="window.location.href='/cadsatrar'" class="btn btn-primary mt-3">
+                                <i class="icon-login icons mr-1"></i> Entrar
+                            </button>
+                        </li>
+                    </ul>
+                    <!-- <a class="navbar-brand h-nav__brand" href="https://www.fortaleza.ce.gov.br/"  target="_blank">
+                        <img src="{% static 'img/logoPref.png' %}" alt="Prefeitura de fortaleza" class="h-nav__brand--image">
+                    </a> -->
+
+                    <!--botão para menu mobile-->
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="icon-menu icons text-black"></i></span>
+                    </button>
+                    <!--/botão para menu mobile-->
+                </div>
+                <!--/desktop menu-->
+                <!--mobile menu-->
+                <div class="h-nav_menu--hidden collapse navbar-collapse " id="mobileMenu">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link linkAnchorAl" href="/">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linkAnchorCom" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linkAnchorFor" href="#">Pontos de wi fi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linkCursos" href="/cursos">Como se conectar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/duvidas-frequentes">Dúvidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link linkAnchorPar" href="#">Parceiros</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <button type="button" onclick="window.location.href='/cadastrar'" class="btn btn-warning btn-block nav-link ">
+                                <i class="icon-login icons mr-1"></i>Cadastrar
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <!--/mobile menu-->
+            </nav>
+        </header>
+        <!--header-->
+        <div class="content">
+            <!--banner-->
+            <section id="banner" class="s-banner" role="banner">
+                <div id="slider" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class=" w-100 bannerPosition d-md-block d-none" src="img/bgPhone.jpg" alt="banner cursos destacados">
+                        <img class="w-100 d-md-none d-block h-100" src="img/bgPhone.jpg" alt="banner mobile destacados">
+                        <div class="s-banner__block">
+                          <div class="row">
+                              <div class="col-md-6 col-9  m-auto text-center">
+                                  <button class="btn btn-primary btnCursosDestacados br btn-block"> Destaques </button>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class=" w-100 bannerPosition d-md-block d-none" src="img/bgArt.jpg" alt="banner cursos juventude digital">
+                        <img class="w-100 d-md-none d-block" src="img/bgArt.jpg" alt="banner mobile cursos juventude digital">
+                        <div class="s-banner__block">
+                            <div class="row">
+                                <div class="col-md-6 col-9 m-auto text-center">
+                                    <button type="button" class="btn btn-info btn-block" onclick="window.location.href='/'"> </button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <!-- <div class="carousel-item">
+                        <img class=" w-100 bannerPosition d-md-block d-none" src="img/bgCidade.jpg" alt="banner sobre juventude digital">
+                        <img class="w-100 d-md-none d-block" src="img/bgCidade.jpg" alt="banner mobile cursos juventude digital">
+                        <div class="s-banner__block">
+                            <div class="row">
+                                <div class="col-md-6 col-9 text-center">
+                                    <button type="button" class="btn btn-info btnBannerSobre btn-block"> Juventude </button>
+                                </div>
+                            </div>
+                        </div>
+                      </div> -->
+                  </div>
+                  <ol class="carousel-indicators">
+                    <li data-target="#slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#slider" data-slide-to="1"></li>
+                  </ol>
+              </div>
+            </section>
+            <!--/banner-->
+
+            <!--about-->
+            <section class="s-coiq-features">
+                <div class="container-sm">
+                    <div class="row ">
+                        <div class="col">
+                            <h2 class="text-center s-content__title--main mb-4 text-main">
+                                WI-FI em Fortaleza
+                            </h2>
+                        </div>
+                    </div>
+                   <div class="row align-items-center">
+                      <div class="col-md-12 br">
+                          <h2 class="text-main">Inclusão digital</h2>
+                          <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim veniam maxime possimus odit natus
+                              aut a suscipit eius quidem est vitae explicabo deserunt, esse non labore. Qui porro assumenda quos.
+                              <hr>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim veniam maxime possimus odit natus
+                              aut a suscipit eius quidem est vitae explicabo deserunt, esse non labore. Qui porro assumenda quos.
+                          </p>
+                          <div class="holderCircle">
+                            <div class="round"></div>
+                            <div class="dotCircle">
+                               <span class="itemDot active itemDot1" data-tab="1">
+                               <i class="fa fa-clock-o"></i>
+                               <span class="forActive"></span>
+                               </span>
+                               <span class="itemDot itemDot2" data-tab="2">
+                               <i class="fa fa-comments"></i>
+                               <span class="forActive"></span>
+                               </span>
+                               <span class="itemDot itemDot3" data-tab="3">
+                               <i class="fa fa-user"></i>
+                               <span class="forActive"></span>
+                               </span>
+                               <span class="itemDot itemDot4" data-tab="4">
+                               <i class="fa fa-tags"></i>
+                               <span class="forActive"></span>
+                               </span>
+                               <span class="itemDot itemDot5" data-tab="5">
+                               <i class="fa fa-upload"></i>
+                               <span class="forActive"></span>
+                               </span>
+                               <span class="itemDot itemDot6" data-tab="6">
+                               <i class="fa fa-briefcase"></i>
+                               <span class="forActive"></span>
+                               </span>
+                            </div>
+                            <div class="contentCircle">
+                               <div class="CirItem title-box active CirItem1">
+                                  <h2 class="title"><span>Automate</span></h2>
+                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                  <i class="fa fa-clock-o"></i>
+                               </div>
+                               <div class="CirItem title-box CirItem2">
+                                  <h2 class="title"><span>Chat </span></h2>
+                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                  <i class="fa fa-comments"></i>
+                               </div>
+                               <div class="CirItem title-box CirItem3">
+                                  <h2 class="title"><span>Responses</span></h2>
+                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                  <i class="fa fa-user"></i>
+                               </div>
+                               <div class="CirItem title-box CirItem4">
+                                  <h2 class="title"><span>Tags</span></h2>
+                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                  <i class="fa fa-tags"></i>
+                               </div>
+                               <div class="CirItem title-box CirItem5">
+                                  <h2 class="title"><span>Sharing</span></h2>
+                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                  <i class="fa fa-upload"></i>
+                               </div>
+                               <div class="CirItem title-box CirItem6">
+                                  <h2 class="title"><span>Support</span></h2>
+                                  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                  <i class="fa fa-briefcase"></i>
+                               </div>
+                            </div>
+                         </div>
+                          <h2 class="text-orange">Cidade online</h2>
+                          <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim veniam maxime possimus odit natus
+                              aut a suscipit eius quidem est vitae explicabo deserunt, esse non labore. Qui porro assumenda quos.
+                          </p>
+                      </div>
+                   </div>
+                </div>
+            </section>
+            <!--/about-->
+
+            <!--Connect-->
+            <section class="our-blog p-0 m-0 bg-gray-200">
+                <div class="container work-process  pb-5 pt-5">
+                    <div class="title mb-5 text-center">
+                    <h3>Our <span class="site-color">Como conectar</span></h3>
+                </div>
+                    <!-- ============ step 1 =========== -->
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="process-step">
+                                            <p class="m-0 p-0">Passo</p>
+                                            <h2 class="m-0 p-0">01</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <h5>Encontre ou procure a rede WIFOR?</h5>
+                                        <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </small></p>
+                                    </div>
+                                </div>
+                                <div class="process-line-l"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-5">
+                            <div class="process-point-right"></div>
+                        </div>
+                    </div>
+                    <!-- ============ step 2 =========== -->
+                    <div class="row">
+
+                        <div class="col-md-5">
+                            <div class="process-point-left"></div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-5">
+                            <div class="process-box process-right" data-aos="fade-left" data-aos-duration="1000">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="process-step">
+                                            <p class="m-0 p-0">Step</p>
+                                            <h2 class="m-0 p-0">02</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <h5>What is Lorem Ipsum?</h5>
+                                        <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </small></p>
+                                    </div>
+                                </div>
+                                <div class="process-line-r"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- ============ step 3 =========== -->
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="process-step">
+                                            <p class="m-0 p-0">Step</p>
+                                            <h2 class="m-0 p-0">03</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <h5>What is Lorem Ipsum?</h5>
+                                        <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </small></p>
+                                    </div>
+                                </div>
+                                <div class="process-line-l"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-5">
+                            <div class="process-point-right"></div>
+                        </div>
+                    </div>
+                    <!-- ============ step 4 =========== -->
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="process-point-left"></div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-5">
+                            <div class="process-box process-right" data-aos="fade-left" data-aos-duration="1000">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="process-step">
+                                            <p class="m-0 p-0">Step</p>
+                                            <h2 class="m-0 p-0">04</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <h5>What is Lorem Ipsum?</h5>
+                                        <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </small></p>
+                                    </div>
+                                </div>
+                                <div class="process-line-r"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- ============ step 3 =========== -->
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="process-box process-left" data-aos="fade-right" data-aos-duration="1000">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="process-step">
+                                            <p class="m-0 p-0">Step</p>
+                                            <h2 class="m-0 p-0">05</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <h5>What is Lorem Ipsum?</h5>
+                                        <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </small></p>
+                                    </div>
+                                </div>
+                                <div class="process-line-l"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-5">
+                            <div class="process-point-right process-last"></div>
+                        </div>
+                    </div>
+                    <!-- ============ -->
+                </div>
+            </section>
+            <!--/Connect-->
+
+            <!--faq-->
+            <section id="anchorFaq" class="s-content s-faq br">
+                <div class="row mb-5">
+                    <div class="col">
+                        <h2 class="text-center s-content__title--main mb-4 text-purple">DÚVIDAS FFEQUENTES</h2>
+                    </div>
+                </div>
+                <div class="container-sm br">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="accordion" id="faq">
+                                <div class="card">
+                                    <div class="card-header" id="faqhead1">
+                                        <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#faq1"
+                                        aria-expanded="true" aria-controls="faq1">Os cursos são gratuitos?</a>
+                                    </div>
+
+                                    <div id="faq1" class="collapse show" aria-labelledby="faqhead1" data-parent="#faq">
+                                        <div class="card-body">
+                                            <b>Sim</b>, os cursos são todos gratuitos. Você só precisa escolher a modalidade que mais se identifica e
+                                            fazer a inscrição  aqui pelo site.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="faqhead2">
+                                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq2"
+                                        aria-expanded="false" aria-controls="faq2">Qual a idade para participar dos cursos?</a>
+                                    </div>
+
+                                    <div id="faq2" class="collapse" aria-labelledby="faqhead2" data-parent="#faq">
+                                        <div class="card-body">
+                                            Para participar dos nossos cursos é necessário ter entre 15 e 29 anos.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="faqhead3">
+                                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq3"
+                                        aria-expanded="false" aria-controls="faq3">Como funcionam as aulas?</a>
+                                    </div>
+
+                                    <div id="faq3" class="collapse" aria-labelledby="faqhead3" data-parent="#faq">
+                                        <div class="card-body">
+                                            As aulas irão ocorrer nas seguintes modalidades: virtual, presencial e híbrida <b>(com
+                                            aulas virtuais e presenciais)</b>, a depender do curso escolhido. Esta informação estará
+                                            disponível na descrição de cada curso.
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="faqhead4">
+                                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq4"
+                                        aria-expanded="false" aria-controls="faq4">Como faço a minha pré-inscrição?</a>
+                                    </div>
+
+                                    <div id="faq4" class="collapse" aria-labelledby="faqhead5" data-parent="#faq">
+                                        <div class="card-body">
+                                            Para você se pré-inscrever, vá até a aba <b>“CURSOS</b>”, selecione o curso desejado e
+                                            clique no botão <b>“Pré-inscrição”</b>.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="faqhead5">
+                                        <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq5"
+                                        aria-expanded="false" aria-controls="faq4">Após concluir minha pré-inscrição, o que devo fazer?</a>
+                                    </div>
+
+                                    <div id="faq5" class="collapse" aria-labelledby="faqhead5" data-parent="#faq">
+                                        <div class="card-body">
+                                            Você deve aguardar. Te enviamos um <b>e-mail</b> com a confirmação ou não da sua inscrição
+                                            até 1 <b>(um) dia</b> útil antes do início das aulas do curso que você quer fazer! Por exemplo: se
+                                            o curso vai iniciar em uma terça-feira, te enviamos o e-mail até a segunda. Então, fica
+                                            ligado no e-mail para ficar acompanhando <b>(não esquece de olhar no spam).</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/faq-->
+
+            <!--/mapa-->
+            <section id="anchorPar" class="s-content s-mapa br">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col">
+                            <h2 class="text-center s-content__title--main mb-4 text-purple">Onde tem wi fi</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <iframe title="Mapa das localidades do WiFi Livre" width="100%"
+                            src="https://www.google.com/maps/d/embed?mid=1ayYcQ0eESPZQt-2A6zkKc7tTupU5YOOF"
+                            height="500px"></iframe>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Legenda</h3>
+                            <ul>
+                                <li><i class="fa fa-map-marker text-green" aria-hidden="true"></i> Wi-Fi diponível</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <h3>Novos pontos</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum illum eos
+                                rem nemo vel sed! Voluptates earum totam repellat iure
+                                dicta neque tempore accusamus dignissimos. Sequi, mollitia minima. Expedita, vitae!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/mapa-->
+
+            <!--/parceiros-->
+            <section id="anchorPar" class="s-content s-parceiros br">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col">
+                            <h2 class="text-center s-content__title--main mb-4 text-purple">PARCEIROS</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-lg-3 s-parceiros__block">
+                            <a href="img/logo-mob.png" target="_blank">
+                                <img src="/url" alt="logo parceiro" class="mb-3">
+                            </a>
+                        </div>
+                        <div class="col-6 col-lg-3 s-parceiros__block">
+                            <a href="img/logo-wifor.png" target="_blank">
+                                <img src="/url" alt="logo parceiro" class="mb-3">
+                            </a>
+                        </div>
+                        <div class="col-6 col-lg-3 s-parceiros__block">
+                            <a href="img/logo-mob.png" target="_blank">
+                                <img src="/url" alt="logo parceiro" class="mb-3">
+                            </a>
+                        </div>
+                        <div class="col-6 col-lg-3 s-parceiros__block">
+                            <a href="img/logo-mob.png" target="_blank">
+                                <img src="/url" alt="logo parceiro" class="mb-3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/Parceiros-->
+
+            <!--fale conosco-->
+            <section id="anchorContact" class="s-content s-connect br">
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col">
+                            <h2 class="text-center s-content__title--main mb-4">Fale conosco</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="img/img-01.png" alt="icone">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="nomeCompleto">Nome</label>
+                                        <input type="text" class="form-control input-round" id="nomeCompleto" aria-describedby="nomeCompleto" placeholder="Nome completo">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control input-round" id="email" aria-describedby="email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="subject">Assunto</label>
+                                        <input type="subject" class="form-control input-round" id="subject" aria-describedby="subject" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Mensagem</label>
+                                        <textarea class="form-control input-round" id="exampleFormControlTextarea1" rows="6"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--/faleconosco-->
+
+        </div>
+        <a href="#" class="btnTop txt-black btn btn-yellow">
+            <i class="icon-arrow-up-circle icons"></i>
+            Voltar Ao topo
+        </a href="#">
+        <!--footer-->
+        <footer id="footer" class="s-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 s-footer__blockLogo">
+                        <a href="/">
+                            <img src="img/logo-wifor.png" alt="logo juventude digital" width="165">
+                        </a>
+                        <div class="s-footer--socialBlock">
+                            <a href="https://www.instagram.com/prefeituradefortaleza/?igshid=oo4pve45zutb" class="" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://twitter.com/prefeiturapmf" target="_blank">
+                                <i class="icon-social-twitter icons" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.facebook.com/PrefeituradeFortaleza" target="_blank">
+                                <i class="icon-social-facebook icons" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 blockAdress">
+                        <address class="text-white">
+                            <b class="font-weight-bold">Fundação de Ciência,
+                                Tecnologia e Inovação de Fortaleza – Citinova</b>
+                            <br>
+                            Rua dos Pacajús, nº 33 - Praia de Iracema, Fortaleza - CE
+                            |
+                            CEP: 60060-520<br>
+                            <button type="button"
+                            onclick="window.location.href='/duvidas-frequentes'"
+                            class="btn btn-ghost mt-2">Fale conosco</button>
+                        </address>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <a href="https://www.fortaleza.ce.gov.br/" target="_blank" class="linkPortal">
+                            Portal da Prefeitura de Fortaleza <i class="icon-arrow-right icons"></i>
+                        </a>
+
+                    </div>
+                    <div class="col-sm-12 d-flex align-items-center justify-content-center">
+                        <a href="https://www.fortaleza.ce.gov.br/" target="_blank">
+                        <img src="img/logo-branca.png" class="mt-3 logoBranca" alt="Logo Prefeitura de Fortaleza">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--/footer-->
+    </main>
+
+</body>
+ <script src="bundle.js"></script>
+ <script>
+    AOS.init();
+</script>
+</html>
