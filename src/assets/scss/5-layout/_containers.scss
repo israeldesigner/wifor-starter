@@ -4,9 +4,10 @@
 }
 
 .s-banner{
+
     #slider {
-        height: auto;
         overflow: hidden;
+        height: 700px;
     }
 
     .carousel-item {
@@ -16,12 +17,9 @@
         .s-banner__block{
             position: absolute;
             right: 15.9%;
-            bottom: 17.5%;
-            width: 65%;
+            top: 15%;
+            width: 68.1%;
             z-index: 20;
-            button{
-                opacity: 0.0;
-            }
         }
     }
 
@@ -37,11 +35,11 @@
     }
     .carousel-indicators {
         position: absolute;
-        bottom: 35%;
+        top: auto;
         right: 12% !important;
-        left: 90%;
+        left: 10%;
         z-index: 15;
-        display: block;
+        display: inline-flex;
         padding-left: 0;
         margin-right: 0;
         margin-left: 0;

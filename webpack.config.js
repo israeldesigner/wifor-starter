@@ -24,7 +24,7 @@ module.exports = {
         open: true,
         compress: true,
         hot: true,
-        port: 4000,
+        port: 8081,
         allowedHosts: [
             'all',
         ],
