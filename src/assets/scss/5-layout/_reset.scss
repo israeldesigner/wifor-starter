@@ -3,9 +3,13 @@
 //====================================
 
 // General
+
+html {
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
 body {
     overflow-x: hidden;
-    font-size:15px;
 }
 
 .wrapper {

@@ -7,22 +7,25 @@
     border-bottom: 1px solid $white;
   }
 
+  .s-faq{
+    background: rgba($color: $yellow, $alpha: 0.1);
+  }
+
   .s-content #faq .card .card-header {
     border: 0;
     padding: 0;
   }
 
   .s-content #faq .card .card-header .btn-header-link {
-    color: $purple;
+    color: $orange;
     display: block;
     text-align: left;
     background: $white;
     font-weight: bold;
     padding: 20px;
     @include border-radius(0px);
-    border-bottom: 1px solid $purple;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .s-content #faq .card .card-header .btn-header-link:after {
@@ -37,8 +40,8 @@
     color: $black;
     font-weight: bold;
     @include border-radius(0px);
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .s-content #faq .card .card-header .btn-header-link.collapsed:after {
@@ -58,7 +61,7 @@
 
   .s-content #faq .card .card-body {
     color: $black !important;
-    background: rgba($color: $purple, $alpha: 0.1);
+    background: $white;
     @include border-radius(4px);
   }
 

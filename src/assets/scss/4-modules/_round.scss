@@ -23,15 +23,15 @@
     width: 80px;
     height: 80px;
     position: absolute;
-    background: #ffffff;
-    color: #7d4ac7;
+    background: $white;
+    color: $orange;
     border-radius: 20px;
     text-align: center;
     line-height: 80px;
-    font-size: 30px;
+    font-size: 24px;
     z-index: 3;
     cursor: pointer;
-    border: 2px solid #e6e6e6;
+    border: 2px solid $gray-300;
 }
 .dotCircle .itemDot .forActive {
     width: 56px;
@@ -47,7 +47,7 @@
     content: "";
     width: 5px;
     height: 5px;
-    border: 3px solid #7d4ac7;
+    border: 3px solid $orange;
     bottom: -31px;
     left: -14px;
     filter: blur(1px);
@@ -62,7 +62,7 @@
     top: -15px;
     position: absolute;
     transform: rotate(-45deg);
-    border: 6px solid #a733bb;
+    border: 6px solid $orange;
     right: -39px;
 }
 .dotCircle .itemDot.active .forActive {
@@ -74,23 +74,18 @@
     top: 45px;
     width: 410px;
     height: 410px;
-    border: 2px dotted #a733bb;
+    border: 2px dotted $yellow;
     border-radius: 100%;
     -webkit-animation: rotation 100s infinite linear;
 }
 .dotCircle .itemDot:hover,
 .dotCircle .itemDot.active {
-    color: #ffffff;
+    color: $black;
     transition: 0.5s; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d4ac7+0,a733bb+100 */
-    background: #7d4ac7; /* Old browsers */
-    background: -moz-linear-gradient(left, #7d4ac7 0%, #a733bb 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #7d4ac7 0%, #a733bb 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #7d4ac7 0%, #a733bb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d4ac7', endColorstr='#a733bb', GradientType=1); /* IE6-9 */
-    border: 2px solid #ffffff;
-    -webkit-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.13);
-    -moz-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.13);
-    box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.13);
+    background: $yellow; /* Old browsers */
+    @include gradient($orange, $yellow);
+    border: 2px solid $white;
+    @include box-shadow(0,30px,30px,$gray-100, false);
 }
 .dotCircle .itemDot {
     font-size: 40px;
@@ -98,7 +93,7 @@
 .contentCircle {
     width: 250px;
     border-radius: 100%;
-    color: #222222;
+    color: $black;
     position: relative;
     top: 150px;
     left: 50%;
@@ -106,7 +101,7 @@
 }
 .contentCircle .CirItem {
     border-radius: 100%;
-    color: #222222;
+    color: $black;
     position: absolute;
     text-align: center;
     bottom: 0;
@@ -169,13 +164,14 @@
     letter-spacing: 2px;
     position: relative;
     z-index: -1;
+    font-size: 20px;
 }
 .title-box span {
     text-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
-    font-weight: 800;
-    color: #640178;
+    font-weight: 700;
+    color: $orange;
 }
 .title-box p {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 2em;
 }
