@@ -6,6 +6,7 @@ import './css/glowCookies.css'
 import './css/font-awesome.css'
 import './css/simple-line.min.css'
 import './css/aos.css'
+import '../../node_modules/@fortawesome/fontawesome-free/css/regular.css'
 
 //import scss
 import './scss/index.scss'

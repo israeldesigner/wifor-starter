@@ -19,6 +19,7 @@
   "author": "israel",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
     "bootstrap": "^4.6.0",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^10.2.4",
