@@ -26,6 +26,10 @@ body {
     border: 1px solid red;
 }
 
+b{
+    font-weight: 700;
+}
+
 img {
     max-width:100%;
 }
@@ -50,6 +54,12 @@ a {
 }
 .z-index-2 {
   z-index:2;
+}
+
+.icon-circle {
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
 }
 // Typography
 

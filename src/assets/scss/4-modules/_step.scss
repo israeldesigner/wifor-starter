@@ -28,13 +28,13 @@
     display: inline-grid;
     position: absolute;
     left: -15px;
-    top: 42%;
+    top: 46%;
     transform: rotate(45deg);
     box-shadow: -1px 1px 3px 0px #0000001a;
     z-index: 1;
 }
 .process-step{
-    background: #00BCD4;
+    background: $main;
     text-align: center;
     width: 80%;
     margin: 0 auto;
@@ -51,41 +51,41 @@
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    border: 8px solid #00bcd4;
-    box-shadow: 0 0 0px 4px #5c5c5c;
+    border: 8px solid $black;
+    box-shadow: 0 0 0px 4px $main;
     margin: auto 0;
     position: absolute;
-    bottom: 40px;
-    left: -63px;
+    bottom: 56px;
+    left: -55px;
 }
 .process-point-right:before{
     content: "";
-    height: 144px;
+    height: 158px;
     width: 11px;
-    background: #5c5c5c;
+    background: $main;
     display: inline-grid;
     transform: rotate(36deg);
     position: relative;
-    left: -50px;
-    top: -0px;
+    left: -52px;
+    top: 2px;
 }
 .process-point-left{
     background: #ffffff;
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    border: 8px solid #00bcd4;
-    box-shadow: 0 0 0px 4px #5c5c5c;
+    border: 8px solid $black;
+    box-shadow: 0 0 0px 4px $main;
     margin: auto 0;
     position: absolute;
-    bottom: 40px;
-    right: -63px;
+    bottom: 50px;
+    right: -93px;
 }
 .process-point-left:before {
     content: "";
     height: 144px;
     width: 11px;
-    background: #5c5c5c;
+    background: $main;
     display: inline-grid;
     transform: rotate(-38deg);
     position: relative;
@@ -104,14 +104,14 @@
     font-size: 20px;
 }
 .process-step h2{
-    font-size: 39px;
+    font-size: 30px;
 }
 .process-step:after{
     content: "";
     border-top: 8px solid #04889800;
-    border-bottom: 8px solid #048898;
+    border-bottom: 8px solid $main;
     border-left: 8px solid #04889800;
-    border-right: 8px solid #048898;
+    border-right: 8px solid $main;
     display: inline-grid;
     position: absolute;
     left: -16px;
@@ -120,8 +120,8 @@
 .process-step:before{
     content: "";
     border-top: 8px solid #ff000000;
-    border-bottom: 8px solid #048898;
-    border-left: 8px solid #048898;
+    border-bottom: 8px solid $main;
+    border-left: 8px solid $main;
     border-right: 8px solid #ff000000;
     display: inline-grid;
     position: absolute;
@@ -129,20 +129,20 @@
     top: 0;
 }
 .process-line-l{
-    background: white;
-    height: 4px;
+    background: $white;
+    height: 6px;
     position: absolute;
-    width: 136px;
-    right: -153px;
-    top: 64px;
+    width: 165px;
+    right: -180px;
+    top: 74px;
     z-index: 9;
 }
 .process-line-r{
-    background: white;
-    height: 4px;
+    background: $white;
+    height: 6px;
     position: absolute;
     width: 136px;
-    left: -153px;
-    top: 63px;
+    left: -143px;
+    top: 79px;
     z-index: 9;
 }

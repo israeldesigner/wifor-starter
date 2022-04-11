@@ -6,6 +6,46 @@
     margin: 0 auto;
     z-index: 1000;
     font-size: 16px;
+
+    .s-acessibility{
+        font-size: .675rem;
+        font-weight: 500;
+        a{
+            color: $black;
+        }
+        ul{
+            list-style: none;
+            li{
+                a{
+
+                    &:hover{
+                        opacity: .75;
+                        text-decoration: none;
+                    }
+                    &:visited{
+                        color: $purple;
+                    }
+                }
+            }
+        }
+
+        .langButton{
+            button{
+                border: none;
+                background-color: none;
+                background: none;
+                img{
+                    @include border-radius(50%);
+                    width: 20px;
+                    height: 20px;
+                }
+                &:hover{
+                    opacity: .75;
+                }
+            }
+        }
+    }
+
     .h-nav{
         .h-nav__links--order{
             width: 100%;
@@ -65,7 +105,9 @@
 }
 
 
+@media (max-width: 1200px) {
 
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {

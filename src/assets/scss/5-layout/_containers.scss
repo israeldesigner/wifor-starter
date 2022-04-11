@@ -7,7 +7,7 @@
 
     #slider {
         overflow: hidden;
-        height: 700px;
+        height: auto;
     }
 
     .carousel-item {
@@ -17,7 +17,7 @@
         .s-banner__block{
             position: absolute;
             right: 15.9%;
-            top: 15%;
+            top: 25%;
             width: 68.1%;
             z-index: 20;
         }
@@ -49,6 +49,34 @@
     .carousel-indicators .active{
         background-color: $main !important;
 
+    }
+}
+
+.s-local{
+    .icon-box{
+        text-align: center;
+        transition: all ease-in-out 0.3s;
+        .icon{
+            svg{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            i{
+                font-size: 28px;
+                z-index: 5;
+            }
+        }
+    }
+}
+
+.s-mapa{
+    ul{
+        list-style: none;
+        li{
+            margin-bottom: 10px;
+        }
     }
 }
 

@@ -80,10 +80,9 @@
 }
 .dotCircle .itemDot:hover,
 .dotCircle .itemDot.active {
-    color: $black;
+    color: $white;
     transition: 0.5s; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d4ac7+0,a733bb+100 */
-    background: $yellow; /* Old browsers */
-    @include gradient($orange, $yellow);
+    background: $orange; /* Old browsers */
     border: 2px solid $white;
     @include box-shadow(0,30px,30px,$gray-100, false);
 }
@@ -129,7 +128,7 @@
     top: 0;
     left: 50%;
     margin-left: -90px;
-    color: #000000;
+    color: $white;
     opacity: 0.1;
 }
 @media only screen and (min-width: 300px) and (max-width: 599px) {
