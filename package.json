@@ -4,12 +4,12 @@
   "description": " package to create dev and build application with webpack",
   "main": "bundle.js",
   "scripts": {
-    "start": "webpack serve",
+    "start": "node server.js",
     "serve": "webpack serve",
     "dev": "cross-env NODE_ENV=development webpack serve",
     "production": "cross-env NODE_ENV=production webpack",
-    "build": "cross-env NODE_ENV=production webpack serve",
-    "heroku-postbuild": "webpack -p"
+    "build": "cross-env NODE_ENV=production webpack",
+    "heroku-postbuild": "cross-env NODE_ENV=production webpack"
   },
   "keywords": [
     "webpack 5",
@@ -18,7 +18,7 @@
     "es6",
     "heroku"
   ],
-  "engines":{
+  "engines": {
     "node": "16.14.2"
   },
   "author": "israel",
@@ -30,6 +30,7 @@
     "copy-webpack-plugin": "^10.2.4",
     "cross-env": "^7.0.3",
     "css-loader": "6.7.1",
+    "express": "^4.17.3",
     "file-loader": "6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "jquery": "^3.6.0",
