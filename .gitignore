@@ -6,9 +6,10 @@ venv/
 db/
 db.sqlite3
 .env
-node_modules/
+/node_modules
 _db_.sqlite3_
-node_modules/
 app/
-
 package-lock.json
+.DS_Store
+/*.env
+npm-debug.log

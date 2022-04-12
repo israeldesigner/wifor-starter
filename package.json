@@ -14,8 +14,12 @@
     "webpack 5",
     "sass",
     "bootstrap4",
-    "es6"
+    "es6",
+    "heroku"
   ],
+  "engines":{
+    "node": "16.14.2"
+  },
   "author": "israel",
   "license": "ISC",
   "dependencies": {
