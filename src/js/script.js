@@ -68,6 +68,84 @@ import $ from 'jquery';
                 transition: "1s",
             });
         }, 5000);
+
+        $(window).scroll( function () {
+            if($(window).scrollTop() > 500) {
+                $("#contHeader").addClass('sticky');
+                $("#logoPrefBranca").hide();
+                $("#logoWifor").show();
+              } else {
+                $("#contHeader").removeClass('sticky');
+                $("#logoPrefBranca").show();
+                $("#logoWifor").hide();
+              }
+        });
+
+        let locationTotal = location.href;
+        let urlExtense = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
+        let base_url = window.location.origin;
+        let host = window.location.host;
+        let pathArray = window.location.pathname.split( '/' );
+        console.log(pathArray);
+        console.log(host);
+        console.log(base_url);
+        console.log(urlExtense);
+        console.log(locationTotal);
+
+        const scrollAnchor = (aid) =>{
+            let aTag = $("section[id='"+ aid +"']");
+            $('html,body').animate({scrollTop: aTag.offset().top -80},'slow');
+        }
+
+        const checkPath = (path) =>{
+            console.log(path[1]);
+            if( path[1] !== ""){
+
+                $('.linkAnchorCom').attr("href", `${base_url}#anchorCom` );
+                $('.linkAnchorRen').attr("href", `${base_url}#anchorRen`);
+                $('.linkAnchorFor').attr("href", `${base_url}#anchorFor` );
+                $('.linkAnchorMis').attr("href", `${base_url}#anchorMis` );
+
+            }else{
+
+                $('.linkAnchorCom').click(function(e){
+                    e.preventDefault();
+                    scrollAnchor('anchorCom');
+                })
+                $('.linkAnchorRen').click(function(e){
+                    e.preventDefault();
+                    scrollAnchor('anchorRen');
+                })
+                $('.linkAnchorFor').click(function(e){
+                    e.preventDefault();
+                    scrollAnchor('anchorFor');
+                })
+                $('.linkAnchorFaq').click(function(e){
+                    e.preventDefault();
+                    scrollAnchor('anchorFaq');
+                })
+                $('.linkAnchorPar').click(function(e){
+                    e.preventDefault();
+                    scrollAnchor('anchorPar');
+                })
+
+                $('.linkAnchorCon').click(function(e){
+                    e.preventDefault();
+                    scrollAnchor('anchorCon');
+                })
+            }
+
+            console.log(path[0] + "testando path");
+            if(path[1] == "cursos") {
+                console.log("são cursos a url");
+                $('.linkCursos').addClass('text-purple');
+            }else{
+                $(".linkAnchorAl").removeClass('text-purple');
+            }
+            window.location.pathname.split( '/' );
+        }
+
+        checkPath(pathArray);
     });
 
 })($);

@@ -97,11 +97,25 @@
         }
     }
 }
+
+#logoWifor{
+    display: none;
+
+}
 .sticky{
     position: fixed;
-    z-index: 50;
-    width: 100%;
+    z-index: 1040;
+    max-width: 100% !important;
     top: 0;
+    background-color:$white;
+    -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    .nav-item{
+        .nav-link{
+            color: $black !important;
+        }
+    }
 }
 
 

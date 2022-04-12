@@ -24,145 +24,145 @@
 
 <body>
     <main class="wrapper">
-        <!--header-->
-        <header id="header" class="">
-            <section class="s-acessibility d-none d-lg-block bg-light">
-                <!--acessibilidade-->
-                <div class="app-acessibilidade">
-                   <div class="container-fluid">
-                      <div class="row align-items-center">
-                         <div class="col-lg-6 col-12 app-acessibilidadeMenu d-none d-md-flex align-items-center">
-                            <a class="scroll mr-1" href="#main-central" data-toggle="tooltip" data-placement="top" title="atalho alt + 1" data-original-title="alt + 1" accesskey="1"> Conteúdo Central |</a>
-                            <a class="scroll mr-1" href="#navMenu" data-toggle="tooltip" data-placement="top" title="atalho alt + 2" data-original-title="alt + 2" accesskey="2"> Menu |</a>
-                            <a class="scroll mr-1" href="#search" data-toggle="tooltip" data-placement="top" title="atalho alt + 3" data-original-title="alt + 3" accesskey="3"> Busca  |</a>
-                            <a class="scroll mr-1" href="#footer" data-toggle="tooltip" data-placement="top" title="atalho alt + 4" data-original-title="alt + 4" accesskey="4"> Rodapé </a>
-                            <a href="https://vlibras.gov.br/" target="_blank" class="ml-3 mr-1" data-toggle="tooltip" rel="noreferrer">
-                            <i class="fa fa-deaf text-gray-700" aria-hidden="true"></i>
+            <!--header-->
+            <header id="header" class="">
+                <section class="s-acessibility d-none d-lg-block bg-light">
+                    <!--acessibilidade-->
+                    <div class="app-acessibilidade">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-12 app-acessibilidadeMenu d-none d-md-flex align-items-center">
+                                <a class="scroll mr-1" href="#main-central" data-toggle="tooltip" data-placement="top" title="atalho alt + 1" data-original-title="alt + 1" accesskey="1"> Conteúdo Central |</a>
+                                <a class="scroll mr-1" href="#navMenu" data-toggle="tooltip" data-placement="top" title="atalho alt + 2" data-original-title="alt + 2" accesskey="2"> Menu |</a>
+                                <a class="scroll mr-1" href="#footer" data-toggle="tooltip" data-placement="top" title="atalho alt + 4" data-original-title="alt + 4" accesskey="4"> Rodapé </a>
+                                <a href="https://vlibras.gov.br/" target="_blank" class="ml-3 mr-1" data-toggle="tooltip" rel="noreferrer">
+                                <i class="fa fa-deaf text-gray-700" aria-hidden="true"></i>
+                                </a>
+                                <a href="./acessibilidade" class="mr-1" data-toggle="tooltip"><i class="fa d-inline fa-wheelchair text-gray-700"></i></a>
+                                <a href="#altocontraste" id="altocontraste" class="colorContrast mr-1 text-gray-700" onclick="window.toggleContrast()">
+                                <i class="fa d-inline fa-adjust text-blue text-gray-700"></i></a>
+                                <a href="javascript:window.toggleFont('-')" class="mr-1 text-gray-700" data-toggle="tooltip">A-</a>
+                                <a href="javascript:window.toggleFont('=')" class="mr-1 text-gray-700" data-toggle="tooltip">A</a>
+                                <a href="javascript:window.toggleFont('+')" class="mr-1 text-gray-700" data-toggle="tooltip">A+</a>
+                                <div class="py-2 flex justify-items-end langButton">
+                                    <!-- exemplo tradução -->
+                                    <button class="lang-button" type="button">
+                                        <img src="img/br.svg" width="25" alt="br" class="">
+                                    </button>
+                                    <button class="lang-button" type="button">
+                                        <img src="img/gb.svg" width="25" alt="ing" class="">
+                                    </button>
+                                    <button class="lang-button" type="button">
+                                        <img src="img/es.svg" width="25" alt="es" class="">
+                                    </button>
+                                    <!-- exemplo tradução-->
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 app-acessibilidadeItens d-none d-md-block">
+                                <ul class="menu mb-0">
+                                <li class="nav-item">
+                                    <a href="https://acessoainformacao.fortaleza.ce.gov.br/" data-toggle="tooltip" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer">Acesso a informação</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://transparencia.fortaleza.ce.gov.br/" data-toggle="tooltip" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer">Transparência</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://catalogodeservicos.fortaleza.ce.gov.br/" data-toggle="tooltip" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer">Serviços</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="http://legislacao.fortaleza.ce.gov.br/index.php/P%C3%A1gina_principal" data-toggle="tooltip" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer">Legislação</a>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!--/acessibilidade-->
+                </section>
+                <div id="contHeader" class="container">
+                    <nav class="h-nav navbar navbar-expand-lg">
+                        <!--desktop menu-->
+                        <div class="h-nav__links--order">
+                            <!--Logo wifor-->
+                            <a href="/" class="h-nav__mainBrand">
+                                <img src="img/logo-branca.png" alt="Logo prefeitura de fortaleza"  id="logoPrefBranca" class="h-nav__brand--hidden">
+                                <img src="img/logo-wifor.png" alt="Logo wifor" id="logoWifor" class="h-nav__brand--hidden">
                             </a>
-                            <a href="./acessibilidade" class="mr-1" data-toggle="tooltip"><i class="fa d-inline fa-wheelchair text-gray-700"></i></a>
-                            <a href="#altocontraste" id="altocontraste" class="colorContrast mr-1 text-gray-700" onclick="window.toggleContrast()">
-                            <i class="fa d-inline fa-adjust text-blue text-gray-700"></i></a>
-                            <a href="javascript:window.toggleFont('-')" class="mr-1 text-gray-700" data-toggle="tooltip">A-</a>
-                            <a href="javascript:window.toggleFont('=')" class="mr-1 text-gray-700" data-toggle="tooltip">A</a>
-                            <a href="javascript:window.toggleFont('+')" class="mr-1 text-gray-700" data-toggle="tooltip">A+</a>
-                            <div class="py-2 flex justify-items-end langButton">
-                                <!-- exemplo tradução -->
-                                <button class="lang-button" type="button">
-                                    <img src="img/br.svg" width="25" alt="br" class="">
-                                </button>
-                                <button class="lang-button" type="button">
-                                    <img src="img/gb.svg" width="25" alt="ing" class="">
-                                </button>
-                                <button class="lang-button" type="button">
-                                    <img src="img/es.svg" width="25" alt="es" class="">
-                                </button>
-                                <!-- exemplo tradução-->
-                             </div>
-                         </div>
-                         <div class="col-lg-6 col-12 app-acessibilidadeItens d-none d-md-block">
-                            <ul class="menu mb-0">
-                               <li class="nav-item">
-                                  <a href="https://acessoainformacao.fortaleza.ce.gov.br/" data-toggle="tooltip" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer">Acesso a informação</a>
-                               </li>
-                               <li class="nav-item">
-                                  <a href="https://transparencia.fortaleza.ce.gov.br/" data-toggle="tooltip" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer">Transparência</a>
-                               </li>
-                               <li class="nav-item">
-                                  <a href="https://catalogodeservicos.fortaleza.ce.gov.br/" data-toggle="tooltip" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer">Serviços</a>
-                               </li>
-                               <li class="nav-item">
-                                  <a href="http://legislacao.fortaleza.ce.gov.br/index.php/P%C3%A1gina_principal" data-toggle="tooltip" class="nav-link px-1 text-gray-700" target="_blank" rel="noopener noreferrer">Legislação</a>
-                               </li>
-                            </ul>
-                         </div>
-                      </div>
-                   </div>
-                </div>
-                <!--/acessibilidade-->
-            </section>
-            <div class="container">
-                <nav class="h-nav navbar navbar-expand-lg">
-                    <!--desktop menu-->
-                    <div class="h-nav__links--order">
-                        <!--Logo wifor-->
-                        <a href="/" class="h-nav__mainBrand">
-                            <img src="img/logo-branca.png" alt="Logo prefeitura de fortaleza" class="h-nav__brand--hidden">
-                        </a>
-                        <!--/Logo wifor-->
+                            <!--/Logo wifor-->
 
-                        <!--nav menu desktop-->
-                        <ul class="h-nav__menu--list navbar-nav ml-auto">
-                            <li class="nav-item">
-                            <a class="nav-link" href="/">Início</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link linkAnchorCom" href="#">Sobre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link linkAnchorFor" href="#">Pontos de wi fi</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link linkCursos" href="/cursos">Como se conectar</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="/duvidas-frequentes">Dúvidas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/parceiros">Parceiros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/parceiros">Fale conosco</a>
-                            </li>
-                            <!-- <li class="nav-item navItem-login">
-                                <button type="button" onclick="window.location.href='/cadsatrar'" class="btn btn-primary mt-3">
-                                    <i class="icon-login icons mr-1"></i> Entrar
-                                </button>
-                            </li> -->
-                        </ul>
-                        <!-- <a class="navbar-brand h-nav__brand" href="https://www.fortaleza.ce.gov.br/"  target="_blank">
-                            <img src="{% static 'img/logoPref.png' %}" alt="Prefeitura de fortaleza" class="h-nav__brand--image">
-                        </a> -->
-
-                        <!--botão para menu mobile-->
-                        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"><i class="icon-menu icons text-black"></i></span>
-                        </button>
-                        <!--/botão para menu mobile-->
-                    </div>
-                    <!--/desktop menu-->
-                    <!--mobile menu-->
-                    <div class="h-nav_menu--hidden collapse navbar-collapse " id="mobileMenu">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link linkAnchorAl" href="/">Início</a>
-                            </li>
-                            <li class="nav-item">
+                            <!--nav menu desktop-->
+                            <ul class="h-nav__menu--list navbar-nav ml-auto">
+                                <li class="nav-item">
+                                <a class="nav-link" href="/">Início</a>
+                                </li>
+                                <li class="nav-item">
                                 <a class="nav-link linkAnchorCom" href="#">Sobre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link linkAnchorFor" href="#">Pontos de wi fi</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link linkCursos" href="/cursos">Como se conectar</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/duvidas-frequentes">Dúvidas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link linkAnchorPar" href="#">Parceiros</a>
-                            </li>
-                            <!-- <li class="nav-item mt-2">
-                                <button type="button" onclick="window.location.href='/cadastrar'" class="btn btn-warning btn-block nav-link ">
-                                    <i class="icon-login icons mr-1"></i>Cadastrar
-                                </button>
-                            </li> -->
-                        </ul>
-                    </div>
-                    <!--/mobile menu-->
-                </nav>
-            </div>
-        </header>
-        <!--header-->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link linkAnchorFor" href="#">Pontos de wi fi</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link linkAnchorRen" href="#">Como se conectar</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link linkAnchorFaq" href="#">Dúvidas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link linkAnchorPar" href="#">Parceiros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link linkAnchorCon" href="#">Fale conosco</a>
+                                </li>
+                                <!-- <li class="nav-item navItem-login">
+                                    <button type="button" onclick="window.location.href='/cadsatrar'" class="btn btn-primary mt-3">
+                                        <i class="icon-login icons mr-1"></i> Entrar
+                                    </button>
+                                </li> -->
+                            </ul>
+                            <!-- <a class="navbar-brand h-nav__brand" href="https://www.fortaleza.ce.gov.br/"  target="_blank">
+                                <img src="{% static 'img/logoPref.png' %}" alt="Prefeitura de fortaleza" class="h-nav__brand--image">
+                            </a> -->
+
+                            <!--botão para menu mobile-->
+                            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"><i class="icon-menu icons text-black"></i></span>
+                            </button>
+                            <!--/botão para menu mobile-->
+                        </div>
+                        <!--/desktop menu-->
+                        <!--mobile menu-->
+                        <div class="h-nav_menu--hidden collapse navbar-collapse " id="mobileMenu">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link linkAnchorAl" href="/">Início</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link linkAnchorCom" href="#">Sobre</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link linkAnchorFor" href="#">Pontos de wi fi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link linkCursos" href="#">Como se conectar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Dúvidas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link linkAnchorPar" href="#">Parceiros</a>
+                                </li>
+                                <!-- <li class="nav-item mt-2">
+                                    <button type="button" onclick="window.location.href='/cadastrar'" class="btn btn-warning btn-block nav-link ">
+                                        <i class="icon-login icons mr-1"></i>Cadastrar
+                                    </button>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <!--/mobile menu-->
+                    </nav>
+                </div>
+            </header>
+            <!--header-->
             <!--banner-->
             <section id="banner" class="s-banner" role="banner">
                 <div id="slider" class="carousel slide" data-ride="carousel">
@@ -185,7 +185,7 @@
                                   <button class="btn btn-orange btn-lg"> Cadastrar </button>
                               </div>
                               <div class="col-md-6 col-9  m-auto text-right">
-                                <img src="img/mapa-banner.png" alt="Logo wifor">
+                                <img src="img/hands.png" alt="hands">
                               </div>
                           </div>
                         </div>
@@ -196,7 +196,7 @@
                         <div class="s-banner__block">
                             <div class="row">
                                 <div class="col-md-6 col-9  m-auto text-right">
-                                    <img src="img/hands.png" alt="hands">
+                                    <img src="img/mapa-banner.png" alt="Logo wifor">
                                 </div>
                                 <div class="col-md-6 pt-2">
                                     <h2 class="text-white">
@@ -219,7 +219,7 @@
             <!--/banner-->
 
             <!--about-->
-            <section class="s-content s-coiq-features">
+            <section id="anchorCom" class="s-content s-coiq-features bg-white">
                 <div class="container">
                     <div class="row ">
                         <div class="col">
@@ -325,7 +325,7 @@
             <!--/about-->
 
             <!--Connect-->
-            <section class="our-blog p-0 m-0 bg-light">
+            <section id="anchorRen" class="our-blog p-0 m-0 bg-light">
                 <div class="container work-process  pb-5 pt-5">
                     <div class="title mb-5 text-center">
                     <h3 class="font-weight-bold">Como se conectar</h3>
@@ -465,7 +465,7 @@
             <!--/Connect-->
 
             <!--/mapa-->
-            <section id="anchorPar" class="s-content s-mapa">
+            <section id="anchorFor" class="s-content s-mapa">
                 <div class="container">
                     <div class="row mb-5">
                         <div class="col">
@@ -494,7 +494,7 @@
                 </div>
             </section>
 
-            <section class="s-content s-local bg-white">
+            <section id="anchorMis" class="s-content s-local bg-white">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6 d-flex align-items-center">
@@ -579,33 +579,33 @@
             </section>
             <!--/mapa-->
 
-            <!--modal-->
-            <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Wi-For - Praças</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <!--modal-->
+                <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Wi-For - Praças</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Praça Coração de Jesus</li>
+                            <li>Praça J Crianca</li>
+                            <li>Praça Jose de Alencar</li>
+                            <li>Praça do Ferreira</li>
+                            <li>Praça Passeio Público</li>
+                            <li>Praça Murilo Borges</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <ul>
-                        <li>Praça Coração de Jesus</li>
-                        <li>Praça J Crianca</li>
-                        <li>Praça Jose de Alencar</li>
-                        <li>Praça do Ferreira</li>
-                        <li>Praça Passeio Público</li>
-                        <li>Praça Murilo Borges</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
                 </div>
             </div>
-            </div>
-        </div>
-            <!--modais-->
+                <!--modais-->
 
             <!--/parceiros-->
             <section id="anchorPar" class="s-content s-parceiros">
@@ -723,7 +723,7 @@
             <!--/faq-->
 
             <!--fale conosco-->
-            <section id="anchorContact" class="s-content s-connect">
+            <section id="anchorCon" class="s-content s-connect">
                 <div class="container">
                     <div class="row mb-5">
                         <div class="col">
