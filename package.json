@@ -2,7 +2,7 @@
   "name": "webpack5-bootstrap4",
   "version": "1.0.0",
   "description": " package to create dev and build application with webpack",
-  "main": "bundle.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "serve": "webpack serve",
