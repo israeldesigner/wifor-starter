@@ -4,11 +4,12 @@
   "description": " package to create dev and build application with webpack",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
     "serve": "webpack serve",
     "dev": "cross-env NODE_ENV=development webpack serve",
     "production": "cross-env NODE_ENV=production webpack",
-    "build": "cross-env NODE_ENV=production webpack"
+    "start": "node server.js",
+    "build": "webpack",
+    "heroku-postbuild": "echo Skip builds on Heroku"
   },
   "keywords": [
     "webpack 5",
