@@ -4,52 +4,67 @@
 }
 
 .s-banner{
-
     #slider {
-        overflow: hidden;
-        height: auto;
-    }
+        .carousel-inner{
+            .carousel-item {
+                position: relative;
+                .bannerPosition{
+                    max-width: unset;
+                    width: inherit;
+                }
+                .s-banner__block{
+                    position: absolute;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                    top: 20%;
+                    margin-top: 50px;
+                    left: 0px;
+                    text-align: left;
+                    z-index: 50;
+                }
 
-    .carousel-item {
-        .bannerPosition{
-            margin-top: -15px;
+                .s-banner__block--img{
+                    // width: 300px;
+                }
+
+                .s-banner__block--logo{
+                    // width: 350px;
+                }
+
+                .s-banner__img--title{
+                    font-size: 1.95rem;
+                }
+            }
+
+            ol.carousel-indicators {
+                position: absolute;
+                bottom: 2%;
+                right: 12% !important;
+                left: 10%;
+                z-index: 15;
+                display: inline-flex;
+                padding-left: 0;
+                margin-right: 0;
+                margin-left: 0;
+                list-style: none;
+                li{
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 100%;
+                    border: 2px solid $white;
+                    margin-bottom: 10px;
+                    background-color:rgba($color: $white, $alpha: 0.0);
+                    opacity: 1;
+                }
+                li:active{
+                    background-color:rgba($color: $white, $alpha: 1.0) !important;
+                }
+            }
         }
-        .s-banner__block{
-            position: absolute;
-            right: 15.9%;
-            top: 25%;
-            width: 68.1%;
-            z-index: 20;
-        }
-    }
-
-
-    .carousel-indicators li {
-        width: 12px;
-        height: 12px;
-        border-radius: 100%;
-        border: 2px solid $white;
-        margin-bottom: 10px;
-        background-color:rgba($color: $white, $alpha: 0.0);
-        opacity: 1;
-    }
-    .carousel-indicators {
-        position: absolute;
-        top: auto;
-        right: 12% !important;
-        left: 10%;
-        z-index: 15;
-        display: inline-flex;
-        padding-left: 0;
-        margin-right: 0;
-        margin-left: 0;
-        list-style: none;
-    }
-
-    .carousel-indicators .active{
-        background-color: $main !important;
 
     }
+
 }
 
 .s-local{
@@ -57,16 +72,15 @@
         text-align: center;
         transition: all ease-in-out 0.3s;
         .icon{
-            svg{
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: -1;
+            img{
+                width: 125px;
+                @include border-radius(50%);
+                cursor: pointer;
             }
-            i{
-                font-size: 28px;
-                z-index: 5;
-            }
+        }
+        h4{
+            font-size: 1.15rem;
+            color: $white;
         }
     }
 }
@@ -81,31 +95,85 @@
 }
 
 
-@media (max-device-width: 1365px) {
+@media (min-device-width: 1600px) {
 
     .s-banner{
         #slider {
             height: auto;
+            .carousel-inner{
+                .carousel-item {
+                    .s-banner__block{
+                        top: 25%;
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .carousel-indicators {
+                bottom: 1%;
+            }
         }
-        .carousel-item {
-            .s-banner__block{
-                top: 20%;
-                right: 10%;
-                z-index: 20;
-            }
-            .s-banner__block--img{
-                width: 225px;
-            }
+    }
+}
 
-            .s-banner__img--title{
-                font-size: 1.6rem;
+@media (max-device-width: 1366px) {
+
+    .s-banner{
+        #slider {
+            height: auto;
+            .carousel-inner{
+                .carousel-item {
+                    .s-banner__block{
+                        top: 20%;
+                        margin-top: 30px;
+                        .s-banner__block--logo{
+                            width: 320px;
+                            margin-left: 20px;
+                        }
+                        .s-banner__block--aside{
+                            width: 415px;
+                        }
+                        .s-banner__img--title{
+                            font-size: 1.4rem;
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+            .carousel-indicators {
+                bottom: 1%;
             }
         }
     }
 }
 
 /* Large devices (desktops, 992px and up) */
+@media (max-width: 1200px) {
+    .s-banner{
+        #slider {
+            .carousel-inner{
+                .carousel-item {
+                    .s-banner__block{
+                    }
+                    .s-banner__img--title{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+            .carousel-indicators {
+                bottom: 1%;
+            }
+        }
+    }
+}
+/* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
+    #slider {
+        .s-banner__block{
+            .s-banner__block--aside{
+                display: none;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -141,7 +209,6 @@
         }
     }
 
-
     .cardEixos{
         width: 100% !important;
     }
@@ -151,13 +218,26 @@
 @media (max-width: 540px) {
 
     .s-banner{
+        #slider{
+            .carousel-inner{
+                .carousel-item{
+                    .s-banner__block{
+                        right: 15.9%;
+                        .s-banner__block--aside{
+                        }
+                    }
+                    .s-banner__block--logo{
+                        // width: 200px;
+                    }
+                    .s-banner__img--title{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+
+        }
         .carousel-indicators {
             bottom: 19%;
-        }
-        .s-banner__block{
-            .s-banner__img--title{
-                font-size: 1.05rem;
-            }
         }
     }
 
@@ -167,7 +247,7 @@
 
     .s-banner{
         .carousel-indicators {
-            bottom: 21%;
+            bottom: 1%;
         }
     }
 
@@ -177,7 +257,7 @@
 
     .s-banner{
         .carousel-indicators {
-            bottom: 23%;
+            bottom: 1%;
         }
     }
 

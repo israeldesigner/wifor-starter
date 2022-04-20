@@ -26,6 +26,14 @@ body {
     border: 1px solid red;
 }
 
+.brr{
+    border: 1px solid green;
+}
+
+.bb{
+    border: 1px solid blue;
+}
+
 b{
     font-weight: 700;
 }
@@ -62,6 +70,10 @@ a {
     margin-right: 10px;
 }
 // Typography
+
+.jumbotron{
+    padding: 3rem 1rem !important;
+}
 
 .display-3 {
     @include media-breakpoint-down(md) {
